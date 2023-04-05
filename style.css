@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+h1,
+h2 {
+    font-family: 'Lato', sans-serif;
+}
+
+nav>ul {
+    list-style-type: none;
+    padding: 0;
+    font-style: italic;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 255);
+}
+
+header {
+    background: linear-gradient(transparent 70%, rgba(0, 0, 0, 0.5) 90%), url('images/allan-cole-N6-52vtceNA-unsplash.jpg');
+    background-size: cover;
+    margin-bottom: 2%;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    margin-top: 2%;
+    background-color: rgb(14, 4, 65);
+    padding: 2%;
+}
+
+#footer-wrapper>h2 {
+    color: #ffffff;
+}
+
+#footer-wrapper>section>h3 {
+    color: #ffffff;
+}
+
+#footer-wrapper>section>ul>li,
+#footer-wrapper>section>ul>li>a {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        margin: 2%;
+    }
+    nav>ul>li {
+        padding: 0.8em 0.8em 0.8em 0.8em;
+    }
+    nav {
+        background-color: rgba(204, 227, 235, 255);
+    }
+    #nav-wrapper>h1 {
+        margin: 0;
+        padding: 8vh 1rem 12vh 1rem;
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        height: 100vh;
+    }
+    #nav-wrapper {
+        margin: 0 2% 0 2%;
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+    }
+    header {
+        height: 100vh;
+    }
+    #nav-wrapper {
+        margin: 0 2% 0 2%;
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+    }
+    #nav-wrapper>h1 {
+        margin: 0;
+        padding: 37vh 0rem 34vh 1rem;
+        font-size: 4rem;
+    }
+    nav>ul {
+        text-align: right;
+        padding: 1em 1em 0em 1em;
+        margin: 0;
+    }
+    nav>ul>li {
+        padding: 1em 1em 0em 1em;
+    }
+    nav>ul>li>a {
+        color: #ffffff;
+    }
+    nav>ul>li {
+        display: inline-block;
+    }
+    #footer-wrapper {
+        display: grid;
+    }
+    #footer-wrapper>h2 {
+        grid-column: span 1;
+    }
+    #footer-wrapper>h2 {
+        grid-column: span 2;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        padding: 1%;
+        border-right: 1px solid #000;
+        border-left: 1px solid #000;
+        margin: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    header {
+        height: 101vh;
+    }
+    #nav-wrapper {
+        padding: 0 1% 0 1%;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        padding: 1%;
+        max-width: 1100px;
+        width: 100%;
+    }
+    #nav-wrapper,
+    main,
+    #footer-wrapper {
+        margin: auto;
+        max-width: 1100px;
+        width: 100%;
+    }
+}
